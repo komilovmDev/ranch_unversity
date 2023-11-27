@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.News {
+    margin-top: 6.5vw;
+    width: 100%;
+    padding-top: 1.56vw;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 4vw;
+}
+
+.NewsContainer {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start; 
+}
+
+.NewsTitleLine {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #3E3E3E99;
+    padding-bottom: .46vw;
+    border-bottom: .1vw solid;
+}
+
+.NewsTitleLineIcon {
+    font-size: 1.25vw;
+    color: #3E3E3E;
+}
+
+.NewsTitleLine p {
+    color: #FF6400;
+    font-size: .833vw;
+    font-weight: 600;
+}
+
+.NewsTitleLineText {
+    color: #FF6400;
+    font-weight: 600;
+    font-size: 0.83vw;
+    text-decoration: none;
+}
+
+.NewsBloks {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.NewsBloks a{
+    text-decoration: none;
+}
+
+.NewsBlok {
+    width: 21vw;
+    height: auto;
+    display: flex;
+    margin: 2vw 0;
+    flex-direction: column;
+    gap: .520vw;
+}
+
+.NewsBlokImg {
+    width: 100%;
+    height: 10vw;
+    border-radius: .625vw;
+    overflow: hidden;
+}
+
+.NewsBlokImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.NewsBlokText {
+    display: flex;
+    flex-direction: column;
+    gap: .260vw;
+}
+
+.NewsBlokText h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 1vw;
+    color: #FF6400;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.NewsBlokText p {
+    padding: 0;
+    margin: 0;
+    font-size: .729vw;
+    color: #3E3E3E;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.Iconright {
+    font-size: 1vw;
+}
+
+@media screen and (max-width:768px) {
+    .NewsContainer {
+        width: 90vw;
+    }
+    .NewsBloks {
+        width: 100%;
+        display: block;
+    }
+    .NewsBloks a {
+        width: 100%;
+        height: auto;
+    }
+    .NewsBlok {
+        height: 70vw;
+        width: 100%;
+    }
+    .NewsBlokImg {
+        width: 100%;
+        height: 100%;
+    }
+    .NewsBlokText h4 {
+        font-size: 3vw;
+    }
+    .NewsBlokText p {
+        font-size: 2.5vw;
+    }
+    .NewsTitleLineIcon {
+        font-size: 3vw
+    }
+    .NewsTitleLineText {
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.Kunduzgi {
+  margin-top: 6.5VW;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 1.56vw;
+  margin-bottom: 4vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.KunduzgiContainer {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.KundizgiTitle p {
+  color: #3e3e3e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.KunduzgiContant {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.KunduzgiTable {
+  width: 71vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5vw;
+  padding: 0;
+  margin: 0;
+}
+
+.KunduzgiTable table {
+  font-size: 0.833vw;
+}
+
+.KunduzgiTable table tr{
+  border-bottom: 0.1vw solid #0000004a;
+  font-size: 0.833vw;
+}
+
+.KunduzgiTable table td{
+  border-right:none;
+  border-left:none;
+  font-size: 0.833vw;
+}
+
+.OneTableBoardTable .Vtoroe {
+  height: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.Pervoe {
+  width: 10vw;
+  text-align: start;
+}
+
+.OneTableBoard {
+  color: #ff6400;
+  font-size: 0.833vw;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Vtoroe {
+  width: 50vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Tretie {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .KunduzgiContainer {
+    width: 90vw;
+  }
+  .KunduzgiTable {
+    width: 100%;
+  }
+  .OneTableBoardTable {
+    width: 100%;
+  }
+  .KunduzgiTable table tr {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  .KunduzgiTable table td {
+    font-size: 3vw;
+  }
+  .OneTableBoardTable .Vtoroe {
+    height: auto;
+  }
+  .KundizgiTitle p {
+    font-size: 4vw;
+  }
+}

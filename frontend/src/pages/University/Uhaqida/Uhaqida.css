@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.Uhaqida {
+    width: 100%;
+    display: flex;
+    margin-bottom: 4vw;
+    padding-top: 1.56vw;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.UhaqidaContainer {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.UhaqidaContantBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.UhaqidaContantText {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    color: #3E3E3E;
+}
+
+.UhaqidaContantText h4 {
+    font-size: 1.30vw;
+    padding: 0;
+    margin: 0;
+}
+
+.UhaqidaContantText p {
+    font-size: .8vw;
+    padding: 0;
+    margin: 0;
+
+}
+
+.UhaqidaContantImg {
+    display: flex;
+    gap: 1vw;
+}
+
+.UhaqidaContantImgBox {
+    width: 16vw;
+    height: 23vw;
+}
+
+.UhaqidaContantImgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

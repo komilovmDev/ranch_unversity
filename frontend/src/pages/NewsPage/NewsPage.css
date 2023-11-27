@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+
+.NewsPage {
+    margin-top: 6.5vw;
+    width: 100%;
+    padding-top: 1.56vw;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 4vw;
+}
+
+.NewsPageContainer {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.NewsPageContantBox {
+    width: 100%;
+    display: flex;
+    gap: 1vw;
+}
+
+.NewsPageContantTitle {
+    font-style: normal;
+    font-size: 1.5vw;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #575757;
+}
+
+.NewsPageContantBoxImg {
+    width: 35vw;
+    height: auto;
+    border-radius: .625vw;
+    overflow: hidden;
+}
+
+.NewsPageContantBoxImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.NewsPageContantBoxText {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: .833vw;
+    font-weight: 500;
+    color: #3E3E3E;
+}
+
+.NewsPageContantBoxText p {
+    padding: 0;
+    margin: 0;
+}
+
+
+@media screen and (max-width:768px) {
+    .NewsPageContainer {
+        width: 90vw;
+    }
+    .NewsTitleLine p {
+        font-size: 3vw;
+    }
+    .NewsPageContantTitle p {
+        width: 100%;
+        font-size: 4vw;
+    }
+    .NewsPageContantBoxImg  {
+        width: 100%;
+    }
+    .NewsPageContantBoxImg img {
+        width: 100%
+    }
+    .NewsPageContantBox {
+        width: 90vw;
+        flex-direction: column;
+    }
+    .NewsPageContantBoxText {
+        width: 100%;
+        font-size: 5vw;
+    }
+}

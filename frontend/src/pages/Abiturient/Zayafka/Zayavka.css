@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.Zayavka {
+  margin-top: 6.5vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 1.56vw;
+  margin-bottom: 4vw;
+  font-family: "Montserrat", sans-serif; 
+}
+
+.ZayavkaContainer {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+
+.ZayavkaOneContainer {
+  width: 60vw;
+  border-radius: 0.5vw;
+  background-color: #f5f7fa;
+  padding: 2.8vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+
+.ZOCName {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ZOCName form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  width: 17vw;
+  color: #777;
+}
+
+.ZOCName form input {
+  outline: none;
+  height: 2vw;
+  border-radius: 0.5vw;
+  border: 0.1vw solid #ff66002b;
+  background: #ffff;
+  padding: 0 0.5vw;
+  font-size: 0.833vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ZOCName form input:focus {
+  border: 0.1vw solid #ff6400;
+  transition: 0.5s all ease-in-out;
+}
+
+input:invalid {
+  border: 0.1vw solid #ff0000;
+}
+
+input:valid {
+  border: none;
+}
+
+.ZOCPhone {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5vw;
+  color: #777;
+}
+
+.ZOCPhone form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.ZOCPhone form input {
+  outline: none;
+  width: 26vw;
+  height: 2vw;
+  border-radius: 0.5vw;
+  border: 0.1vw solid #ff66002b;
+  background: #ffff;
+  padding: 0 0.5vw;
+  font-size: 0.833vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ZOCPhone form input:focus {
+  border: 0.1vw solid #ff6400;
+  transition: 0.5s all ease-in-out;
+}
+
+.ZOCDok {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5vw;
+  color: #777;
+}
+
+.ZOCDok form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.ZOCDok form input {
+  outline: none;
+  width: 15vw;
+  height: 2vw;
+  border-radius: 0.5vw;
+  border: 0.1vw solid #ff66002b;
+  background: #ffff;
+  padding: 0 0.5vw;
+  font-size: 0.833vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ZOCDok form input:focus {
+  border: 0.1vw solid #ff6400;
+  transition: 0.5s all ease-in-out;
+}
+
+.ZOCvibor {
+  display: flex;
+  flex-direction: column;
+  gap: .5vw;
+}
+
+.ZOCvibor p{
+  padding: 0;
+  margin: 0;
+  color: #777;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.ZOCvibor form {
+  display: flex;
+  flex-direction: column;
+  gap: .3vw;
+}
+
+.ZOCvibor label {
+  font-size: .9vw;
+  color: #777;
+}
+
+.ZOCvibor form div{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: .5vw;
+}
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ff6400;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.ZOCVibor {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  color: #777;
+}
+
+.ZOCVibor select{
+  width: 100%;
+}
+
+.dropdownOption {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--dark-gray-dark-gray-2, #252c32);
+  font-size: .9vw;
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: .3vw;
+  border-bottom: 0.1vw solid white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-contentOption {
+  width: 16.66vw; 
+  height: auto;
+  display: none;
+  position: absolute;
+  border-radius: 8px;
+  border: 1px solid var(--gray-100, #F2F4F7);
+  background: var(--White, #FFF);
+  box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+  padding: .5vw .72vw;
+  z-index: 1;
+}
+
+.dropdown-contentOption a { 
+  width: 100%;
+  height: auto;
+  color: var(--gray-900, #101828);
+  text-decoration: none;
+  display: flex;
+}
+
+.dropdown-contentOption a:hover .ButtonChek{
+  display: flex;
+ 
+}
+
+.dropdownOption:hover .dropdown-contentOption { 
+  display: block;
+}
+
+.ZOCManzil {
+  display: flex;
+  flex-direction: column;
+  gap: .5vw;
+  color: #777;
+}
+
+.ZOCManzil input{
+  width: 100%;
+  height: 3vw;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #777;
+  border: 0.1vw solid #ff66002b;
+  border-radius: .5vw;
+}
+
+.ZOCManzil input:focus {
+  border: 0.1vw solid #ff6400;
+  transition: 0.5s all ease-in-out;
+}
+
+.ZOCFail {
+  display: flex;
+  gap: 4.23vw;
+  color: #777;
+  font-weight: 500;
+}
+
+.ZOCFail form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #777;
+  font-weight: 500;
+}
+
+.input-file p{
+  font-size: 1vw;
+}
+
+.input-file {
+  width: 8vw;
+  height: 2vw;
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .3vw;
+  cursor: pointer;
+}
+
+.input-file span{
+  font-size: .83vw;
+  font-weight: 600;
+}
+
+.input-file input{
+  display: none;
+}
+
+.ZOCJonatish input{
+  display: none;
+}
+
+.ZOCJonatish {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.submit-button {
+  width: 6vw;
+  height: 2vw;
+  background-color: #FF6400;
+  border-radius: .2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #FFF;
+  font-size: .9vw;
+  font-weight: 600;
+  border: .2vw solid #FF6400;
+  transition: .5s;
+}
+
+.submit-button:hover {
+  width: 6vw;
+  height: 2vw;
+  background-color: #fff;
+  border-radius: .2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #FF6400;
+  font-size: .9vw;
+  font-weight: 600;
+}
+
+@media (max-width:768px) {
+  
+}

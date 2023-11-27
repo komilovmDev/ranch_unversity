@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+#Navbar{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  z-index: 5;
+  background-color: #FFF;
+}
+
+.NavContainer {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.NavUp {
+  width: 70vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  padding: 1vw 0;
+}
+
+.LogBut {
+  display: flex;
+  gap: 0.5vw;
+  border-radius: 0.3vw;
+}
+
+.LogBut img {
+  width: 6vw;
+}
+
+.LogBut button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7.6vw;
+  height: 2vw;
+  padding: 0.4vw 0.8vw;
+  background-color: #ff6400;
+  border: none;
+  border-radius: 0.3vw;
+  color: #f6f8f9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25vw;
+  border: 0.1vw solid #ff6400;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.LogBut button:hover {
+  background-color: #f6f8f9;
+  color: #ff6400;
+  border: 0.1vw solid #ff6400;
+}
+
+.TelEmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.56vw;
+  color: #3e3e3e;
+  font-size: 0.7vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Tel {
+  display: flex;
+  align-items: center;
+  gap: 0.3vw;
+}
+
+.Tel a {
+  text-decoration: none;
+  font-size: 0.7vw;
+  color: #3e3e3e;
+  font-weight: 700;
+}
+
+.Email {
+  display: flex;
+  align-items: center;
+  gap: 0.3vw;
+}
+
+.Email a {
+  text-decoration: none;
+  font-size: 0.7vw;
+  color: #3e3e3e;
+  font-weight: 700;
+}
+
+.Tel img {
+  width: 0.8vw;
+}
+
+.Email img {
+  width: 0.8vw;
+}
+
+.LabInp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.LabInp label {
+  width: 26.14vw;
+  border: 0.1vw solid #cacaca;
+  padding: 0.21vw 0.83vw;
+  border-radius: 0.3vw;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.LabInp label input {
+  width: 23.22vw;
+  height: 1.25vw;
+  background: inherit;
+  outline: none;
+  border: none;
+  font-size: 0.72vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.LabInp label button {
+  outline: none;
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+  color: #b0babf;
+  cursor: pointer;
+}
+
+.ButLang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ButLang button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2vw;
+  padding: 0.4vw 0.8vw;
+  background-color: #ff6400;
+  border: none;
+  border-radius: 0.3vw;
+  color: #f6f8f9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25vw;
+  border: 0.1vw solid #ff6400;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.ButLang button:hover {
+  background-color: #f6f8f9;
+  color: #ff6400;
+  border: 0.1vw solid #ff6400;
+}
+
+.NavDown {
+  display: flex;
+  gap: 1.1vw;
+  position: relative;
+  z-index: 2;
+}
+
+
+.dropbtn {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--dark-gray-dark-gray-2, #252c32);
+  font-size: .9vw;
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: .3vw;
+  border-bottom: 0.1vw solid white;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  border-bottom: 0.1vw solid #ff6400;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  width: 16.66vw; 
+  height: auto;
+  display: none;
+  position: absolute;
+  border-radius: .5vw;
+  border: 1px solid var(--gray-100, #F2F4F7);
+  background: var(--White, #FFF);
+  box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+  padding: .5vw .72vw;
+  z-index: 1;
+}
+
+.DropButtonLink {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content a { 
+  width: 100%;
+  height: auto;
+  color: var(--gray-900, #101828);
+  text-decoration: none;
+  display: flex;
+}
+
+.dropdown-content a:hover .ButtonChek{
+  display: flex;
+ 
+}
+
+.dropdown:hover .dropdown-content { 
+  display: block;
+}
+
+.ButLang {
+  width: auto;
+  display: flex;
+  gap: .3vw;
+}
+
+.ButLang select {
+  width: 3vw;
+  border: none;
+  background: none;
+  outline: none;
+
+}
+
+.buttonImg {
+  width: 100%;
+}
+
+#lang {
+  cursor: pointer;
+  font-size: 1vw;
+  width: 3.64vw;
+}
+
+.dropdown-content a .ButtonChek{
+  outline: none;
+  border: none;
+  background: none;
+  color: #FF6400;
+  font-size: 1vw;
+  display: none;
+}
+
+.LinkBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 1.8vw; 
+  font-size: .83vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.LinkBox p {
+  margin: 0;
+  padding: 0;
+}
+#navRes {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #Navbar {
+    display: none;
+  }
+  #navRes {
+    width: 100%;
+    display: flex;
+  }
+}

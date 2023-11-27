@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.Fhamkor{
+    margin-top: 6.5vw;
+    padding-top: 1.56vw;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4vw;
+}
+
+.FhamkorContainer {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+
+.FhamkorContant {
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+ 
+.FhamkorContant a {
+    text-decoration: none;
+}
+
+.FhamkorContantGlav {
+    display: flex;
+    justify-content: center;
+}
+
+.FhamkorContantBox {
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+    border-bottom: .1vw solid #000000;
+    padding-bottom: 1.69vw;
+}
+
+.FhamkorBoxImg {
+    width: 28.75vw;
+    height: 18vw;
+    border-radius: .5vw;
+    overflow: hidden;
+}
+
+.FhamkorBoxImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.FhamkorBoxTitle p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #3E3E3E;
+}
+
+@media screen and (max-width:768px) {
+    .FhamkorContainer {
+        width: 90vw;
+    }
+    .FhamkorContant {
+        width: 100%;
+        display: block;
+    }
+    .FhamkorContantBox {
+        width: 100%;
+        height: 50vw;
+        margin-bottom: 15px;
+    }
+    .FhamkorBoxImg {
+        width: 100%;
+        height: 100%;
+    }
+    .FhamkorBoxImg img {
+        width: 100%;
+        height: 100%;
+        border-radius: 3vw;
+    }
+    .FhamkorBoxTitle p {
+        font-size: 4vw;
+    }
+}

@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+
+.Yangilik {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vw;
+    position: relative;
+    z-index: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.YangiliklarContainer {
+    width: 70vw;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    gap: .78vw;
+}
+
+.YangilikTitleBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.YangilikTitleBox p {
+    font-size: 1.45vw;
+    font-weight: 600;
+    color: #FF6400;
+}
+
+.YangilikTitleBox h5 {
+    font-size: 1.25vw;
+    font-weight: 600;
+    color: #3E3E3E;
+    padding: 0;
+    margin: 0;
+}
+
+.YangilikSwiper {
+    width: 70vw;
+    height: auto;
+}
+
+.YangiliklarCards {
+    height: auto;
+    height: 24vw;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.YangilikTitleButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.YangilikTitleButton a {
+    text-decoration: none;
+    color: #FF6400;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+}
+
+.YangilikCard {
+    width: 13.80vw;
+    height: 19.27vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5vw;
+    overflow: hidden;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.CardImgbox {
+    width: 100%;
+    height: 10.41vw;
+}
+
+.CardImgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Cardtext {
+    display: flex;
+    flex-direction: column;
+    gap: .625vw;
+    padding: .571vw .468vw;
+}
+
+.Cardtext h4 {
+    padding: 0;
+    margin: 0;
+    color: #575757;
+    font-size: 1.041vw;
+    font-weight: 700;
+}
+
+.Cardtext p {
+    padding: 0;
+    margin: 0;
+    color: rgba(62, 62, 62, 0.70);
+    font-weight: 500;
+    font-size: .625vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Cardbutton {
+    padding: 0 .468vw;
+}
+
+.Cardbutton button {
+    outline: none;
+    border: none;
+    background: none;
+    color: #FF6400;
+    font-size: .833vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.swiper-android .swiper-slide,
+.swiper-ios .swiper-slide,
+.swiper-wrapper {
+    width: 70vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media  (max-width:768px) {
+    .Yangilik {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        position: relative;
+        z-index: 0;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .YangilikTitleBox {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .YangilikTitleBox p {
+        font-size:8vw;
+        font-weight: 600;
+        color: #FF6400;
+    }
+
+    .YangilikTitleBox h5 {
+        font-size: 8vw;
+        font-weight: 600;
+        color: #3E3E3E;
+        padding: 0;
+        margin: 0;
+    }
+
+    .YangilikTitleButton a {
+        font-size:9vw ;
+    }
+
+ 
+
+    .YangilikSwiper {
+        width: 100%;
+    }
+
+    .YangilikCard {
+        width: 100%;
+        height: 120vw; 
+        border-radius: 5vw;
+        display: block;
+        overflow: hidden; 
+        text-decoration: none;
+        list-style-type: none;
+        background-color: #d9d9d925;
+    }
+
+    .YangiliklarContainer {
+        width: 90%;
+    }
+
+    .CardImgbox {
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+    .Cardtext h4 {
+        font-size: 4vw;
+    }
+    .Cardtext p {
+        font-size: 2.5vw;
+    }
+
+    .YangiliklarCards {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Cardtext {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        padding: 0vw 4vw;
+    }
+    
+    .Cardtext h4 {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        color: #575757;
+        font-size: 5vw;
+        font-weight: 700;
+        border-bottom: .2vw solid #FF6400;
+        padding-bottom: 2vw;
+    }
+    
+    .Cardtext p {
+        padding: 0;
+        margin: 0;
+        color: rgba(62, 62, 62, 0.70);
+        font-weight: 500;
+        font-size: 5vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .Cardbutton {
+        padding: 4vw;
+    }
+    
+    .Cardbutton button {
+        outline: none;
+        border: none;
+        background: none;
+        color: #FF6400;
+        font-size: 5vw;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    .Ebeyshiy {
+        padding-top: 3vw;
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+        width: 100%;
+        height: 50%;
+    }
+}

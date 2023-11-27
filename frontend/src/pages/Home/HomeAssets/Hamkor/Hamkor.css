@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+
+.Hamkor {
+    width: 100%;
+    display: flex;
+    gap: 2vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.HamkorTitleBox {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.HamkorSwiper {
+    width: 70vw;
+}
+
+.HamkorSwiperBox {
+    width: 70vw;
+}
+
+.HamkorSwiperBox a img {
+    width: 6.97vw;
+    height: 6.97vw;
+}
+
+.HamkorTitle p {
+    font-size: 1.45vw;
+    color: #FF6400;
+    font-weight: 600;
+}
+
+ @media (max-width:768px) {
+    .Hamkor {
+        width: 100%;
+        display: flex;
+        gap: 2vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .HamkorTitleBox {
+        width: 90%;
+    }
+
+
+    .HamkorTitle p {
+        font-size: 8vw;
+    }
+
+    .HamkorSwiperBox a img {
+        width: 25vw;
+        height: auto;
+    }
+    .HamkorSwiper {
+        width: 100vw;
+    }
+    
+    .HamkorSwiperBox {
+        width: 100%;
+    }
+ }

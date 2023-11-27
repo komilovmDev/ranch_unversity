@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.Rektorat {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.56vw;
+    margin-top: 6.5vw;
+    margin-bottom: 2vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.RektoratContainer {
+    width: 70vw;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2vw;
+}
+
+.RektoratContant {
+    display: flex;
+    justify-content: space-between;
+}
+
+.RektoratContContainer {
+    display: flex;  
+}
+
+ .RektoratContantObsh {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+ }
+
+.RektoratBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16vw;
+    height: 25vw;
+    justify-content: space-around;
+}
+
+.RektoratImg {
+    width: 100%;
+    height: 60%;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+ 
+.RektoratImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.RektoratImg {
+    width: 100%;
+    height: 30vw;
+}
+
+.RektoratText {
+    width: 100%;
+    height: 13vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+}
+
+.RektoratText h4 {
+    font-size: 1vw;
+    color:#575757;
+    word-wrap: break-word;
+}
+
+.RektoratText p {
+    width: 100%;
+    font-size: .8vw;
+    color: #3E3E3E;
+}
+
+@media screen and (max-width:768px) {
+    .Rektorat {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.56vw;
+        margin-top: 6.5vw;
+        margin-bottom: 2vw;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .RektoratContainer {
+        width: 90%;
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2vw;
+    }
+    
+    .RektoratContant {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .RektoratContContainer {
+        width: 70%;
+        display: flex;  
+    }
+    
+     .RektoratContantObsh {
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+     }
+    
+    .RektoratBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+    }
+    
+    .RektoratImg {
+        width: 100%;
+        height: 60%;
+        border-radius: 1vw;
+        overflow: hidden;
+    }
+     
+    .RektoratImg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 3vw;
+    }
+    
+    .RektoratImg {
+        width: 100%;
+        height: auto;
+    }
+    
+    .RektoratText {
+        width: 100%;
+        height: 13vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        word-wrap: break-word;
+    }
+    
+    .RektoratText h4 {
+        font-size: 4vw;
+        color:#575757;
+        word-wrap: break-word;
+    }
+    
+    .RektoratText p {
+        width: 100%;
+        font-size: .8vw;
+        color: #3E3E3E;
+    }
+}

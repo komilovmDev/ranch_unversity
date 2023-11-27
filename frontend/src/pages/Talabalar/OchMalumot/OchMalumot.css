@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.OchMalumot {
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 6.5vw;
+    margin-bottom: 5vw;
+    padding-top: 1.56vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.OchMalumotContainer {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.OchMalumotContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+
+.OMCTitle p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.7vw;
+    font-weight: 700;
+    color: #575757;
+}
+
+.OMCBoxObsh {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.OMCBox {
+    width: 21vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+    border-bottom: .1vw solid #FF6400;
+    padding-bottom: .3vw;
+}
+
+.imgBoxOMC {
+    width: 100%;
+    height: 11vw;
+    border-radius: .5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgBoxOMC {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.TextBoxOMC p{
+    padding: 0;
+    margin: 0;
+    font-size: 0.7vw;
+    color: #3E3E3E;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.TextBoxOMC h4{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 1vw;
+    color: #FF6400;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+

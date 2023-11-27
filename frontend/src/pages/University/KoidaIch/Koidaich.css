@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.Koidaich {
+    margin-top: 6.5vw;
+    width: 100%;
+    padding-top: 1.56vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.KoidaichContainer {
+    width: 70vw;
+    font-size: 1vw;
+    color: #3E3E3E;
+}

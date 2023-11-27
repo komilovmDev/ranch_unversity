@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.OdobPage {
+    margin-top: 6.5vw;
+    padding-top: 1.56vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 4vw;
+}
+
+.OdobPageContainer {
+    width: 70vw;
+    font-size: 1vw;
+    color: #3E3E3E;
+}

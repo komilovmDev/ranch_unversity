@@ -1,0 +1,7 @@
+.Home {
+    margin-top: 6.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+    margin-bottom: 5vw;
+}

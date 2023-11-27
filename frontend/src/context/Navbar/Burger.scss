@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+
+$font-family: "Open Sans", sans-serif;
+$font-size: 1em;
+
+$color-body: #e2e2e2;
+$color-text: #fff;
+$color-menu: #2d2d2d;
+$color-fixed: #abba27;
+
+$variable-menu-animation-time: 1s;
+$variable-burger-animation-time: 0.35s;
+
+$variable-menu-animation-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+$variable-burger-animation-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+:root {
+  --button-background: dodgerblue;
+  --button-color: white;
+  
+  --dropdown-highlight: dodgerblue;
+  --dropdown-width: 160px;
+  --dropdown-background: white;
+  --dropdown-color: black;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#menu--toggle[type="checkbox"]:not(:checked),
+#menu--toggle[type="checkbox"]:checked {
+  display: none;
+}
+
+.menu--toggle__trigger,
+.menu--toggle__burger,
+.menu--toggle__burger:before,
+.menu--toggle__burger:after {
+  position: fixed;
+  top: 3vw;
+  right:2vw;
+  width: 7vw;
+  height: .4vw;
+  background-color: #000000;
+  border-radius: 2px;
+  cursor: pointer;
+  z-index: 100; 
+  transition: $variable-burger-animation-time $variable-menu-animation-function;
+}
+
+#menu {
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu--toggle__trigger {
+  height: 2em;
+  background: none; 
+  padding: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu--toggle__burger {
+  &:before {
+    content: "";
+    top: 5.5vw;
+    right: 2vw;
+  }
+  &:after {
+    content: "";
+    top: 8.5vw;
+    right: 2vw;
+  }
+}
+
+.menu {
+  position: fixed;
+  width: 100vw;
+}
+
+.divTuggleOb {
+  width: 100vh;
+  position: relative;
+  top: 0;
+  z-index: 100;
+}
+
+.menu__body {
+  display: flex;
+  align-items: flex-flex-start;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100vw;
+  height:14vw;
+  margin: 0;
+  padding: 0 20px; 
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 24px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 24px 0px rgba(34, 60, 80, 0.2);
+  z-index: 10;
+  animation: checkboxUncheckedAnimation $variable-burger-animation-time both;
+}
+
+.menu__body-element,
+.menu__body-link {
+  display: none;
+  margin: 4.4em 0 -3.3em -0.1em;
+  font-weight: normal;
+  color: $color-text;
+  text-decoration: none;
+  text-transform: none;
+  list-style: none;
+  outline: 0;
+}
+
+
+
+.menu__body-link:hover {
+  display: block;
+  width: 0;
+  color: $color-text;
+  background-color: $color-body;
+  animation: changeWidthOfElementAnimation $variable-burger-animation-time both;
+}
+
+#menu--toggle:checked + .menu--toggle__trigger {
+  & + .menu--toggle__burger {
+    top: 20px;
+    transform: rotate(405deg);
+    transition: transform $variable-burger-animation-time
+      $variable-burger-animation-function;
+
+    &:before {
+      top: 0;
+      left: -1px;
+      right: 0;
+      transform: rotate(-90deg);
+      transition: transform $variable-burger-animation-time
+        $variable-burger-animation-function;
+    }
+    &:after {
+      top: 0;
+      left: -1px;
+      right: 0;
+      transform: rotate(90deg);
+      transition: transform $variable-burger-animation-time
+        $variable-burger-animation-function;
+    }
+  }
+
+  & + .menu--toggle__burger + .menu__body {
+    animation: checkboxCheckedAnimation $variable-menu-animation-time
+      $variable-menu-animation-function both;
+  }
+
+  & ~ .menu__body .menu__body-element,
+  & ~ .menu__body .menu__body-link {
+    display: block;
+  }
+}
+
+.promotion {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes checkboxCheckedAnimation {
+  50% {
+    width: 100vw;
+    height: 100vh;
+  }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
+
+@keyframes checkboxUncheckedAnimation {
+  0% {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@keyframes changeWidthOfElementAnimation {
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.sub-menu {
+  display: none;
+}
+.main-item:focus ~ .sub-menu,
+.main-item:active ~ .sub-menu,
+.sub-menu:hover {
+  display: block;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+#wrapper .button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 5vw;
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  &:active {
+    background: none;
+  }
+}
+
+.podcat {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.podcat a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.podcat a h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content a{
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.content p {
+  font-size: 5vw;
+  color: black;
+  display: flex;
+  justify-content:flex-start;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 150px 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffff;
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 1;
+  overflow: scroll;
+  .cancel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+  }
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 68px;
+  left: 16px;
+  opacity: 0.8;
+  transition: all 200ms;
+  font-size: 10vw;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ff6400;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.none {
+  display: none;
+}
+
+.MapBox a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.popup {
+  width: 100%;
+  height: auto;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-flex-start;
+  gap: 20px;
+}
+
+.popup h4 {
+  display: block;
+  margin-block-flex-start: 0;
+  margin-block-end: 0;
+  margin-inline-flex-start: 0;
+  margin-inline-end: 0;
+  font-weight: bold;
+
+}
+
+
+.logoUkm {
+  position: absolute;
+  height: 15vw;
+  padding-bottom: 10px;
+  padding-top: 2vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  z-index: 90;
+  padding-left: 3vw; 
+}
+
+
+.GlavBtw {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+
+}
+
+.GlavBtw img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.article {
+  position: relative;
+  z-index: 0;
+}
+
+.menu__body-element:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.LinespanBut {
+  width: 100%;
+  gap: 10vw;
+  bottom: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.LineSpan { 
+  width: 85%;
+  height: .4vw;
+  background-color: #000000;
+}

@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.Galereya {
+    margin-top: 6.5vw;
+    padding-top: 1.56vw;
+    margin-bottom: 2vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.GalereyaContainer {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vw;
+}
+
+.GalereyaContant {
+    position: relative;
+    width: 100%; 
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+
+}
+
+aside {
+    display: flex; 
+    gap: 1vw;
+    flex-direction: column;
+}
+
+.AsideLink {
+    display: flex;
+    flex-direction: column;
+}
+
+.GalereyaCont {
+    width: 52vw;
+    height: 33.7vw;
+    padding-right: 1.1vw;
+    overflow-y: auto;
+}
+
+.GalleryContImgBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6vw;
+}
+
+.imgBox {
+    width: 16vw;
+    height: 16vw;
+    border-radius: .6vw;
+    overflow: hidden;
+}
+
+.imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+
+.AsideLink {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1vw;
+}
+
+.AsideLink a {
+    display: flex;
+    align-items: center;
+    gap: .2vw;
+    font-size: 1vw;
+    font-weight: 500;
+    text-decoration: none;
+    color: #3E3E3E;
+}
+
+.AsideLink a img {
+    width: .8vw;
+    height: .8vw;
+}
+
+.TitleAside {
+    font-size: 1.5vw;
+    color: #FF6400;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+
+}
+
+.GalereyaCont::-webkit-scrollbar {
+    width: .6vw;  /* width of the entire scrollbar */
+  }
+  .GalereyaCont::-webkit-scrollbar-track {
+    background: #D9D9D9;   /* color of the tracking area */
+    width: .7vw;
+    border-radius: 1vw;
+  }
+  .GalereyaCont::-webkit-scrollbar-thumb {
+    background-color: #F4F4F4;    /* color of the scroll thumb */
+    border-radius: 1vw;       /* roundness of the scroll thumb */
+    border: .1 solid #D9D9D9;  /* creates padding around scroll thumb */
+  }
+
+
+@media screen and (max-width:768px) {
+    .GalereyaContainer {
+        width: 90vw;
+    }
+    .GalereyaContant {
+        width: 100%;
+        flex-direction: column;
+    }
+    .GalereyaCont {
+        width: 100%;
+        height: 100%;
+    }
+    .GalleryContImgBox {
+        width: 100%;
+        flex-direction: column;
+    }
+    .imgBox {
+        width: 100%;
+        height: 70vw;
+    }
+    .TitleAside  {
+        font-size: 10vw;
+    }
+    .AsideLink a {
+        font-size: 6vw;
+    }
+    .AsideLink a img {
+        width: 4vw;
+        height: 4vw;
+        padding-right: 10px;
+    }
+}
