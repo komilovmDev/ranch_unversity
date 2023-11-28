@@ -11,9 +11,14 @@ export default function Kunduzgi() {
     const { id } = useParams()
     const [data, setData] = useState([])
     const getData = async () => {
-        const response = await axios.get(`https://utu-ranch.uz/api/content/${id}/`)
-        setData(response.data)
-    }
+        try {
+            const response = await axios.get(`https://utu-ranch.uz/api/content/${id}/`);
+            setData(response.data);
+            console.log(response.data.contenttable)
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    };
 
     useEffect(() => {
         getData()
@@ -43,16 +48,14 @@ export default function Kunduzgi() {
                             </tr>
                         </table>
                         {
-                            data.map(item => (
-                                <table>
-                                    <tr className='TableName'>
-                                        <td className='Pervoe'>60310100</td>
-                                        <td className='Vtoroe'>{item.nomi}</td>
-                                        <td className='Tretie'>17 002 750</td>
-                                    </tr>
-                                </table>
-                            ))
-                        }
+                            data.contenttable &&
+                            data.contenttable.map(item => (
+                                <tr key={item.id} className='TableName'>
+                                    <td className='Pervoe'>{item.kod}</td>
+                                    <td className='Vtoroe'>{item.yonalish}</td>
+                                    <td className='Tretie'>{item.price}</td>
+                                </tr>
+                            ))}
                     </div>
                 </div>
             </div>
