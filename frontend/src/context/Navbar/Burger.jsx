@@ -30,6 +30,7 @@ const Burger = () => {
         window.location.assign('/');
     }
 
+    const lang = 'uz'
     return (
         <section id='menu'>
             <article >
