@@ -12,9 +12,9 @@ export default function Kunduzgi() {
     const [data, setData] = useState([])
     const getData = async () => {
         try {
-            const response = await axios.get(`https://utu-ranch.uz/api/content/${id}/`);
+            const response = await axios.get(`https://utu-ranch.uz/api/narxla/${id}/`);
             setData(response.data);
-            console.log(response.data.contenttable)
+            console.log(response.data)
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -48,14 +48,16 @@ export default function Kunduzgi() {
                             </tr>
                         </table>
                         {
-                            data.contenttable &&
-                            data.contenttable.map(item => (
-                                <tr key={item.id} className='TableName'>
-                                    <td className='Pervoe'>{item.kod}</td>
-                                    <td className='Vtoroe'>{item.yonalish}</td>
-                                    <td className='Tretie'>{item.price}</td>
-                                </tr>
-                            ))}
+                            data.map(item => (
+                                <table>
+                                    <tr className='TableName'>
+                                        <td className='Pervoe'>{item.kod}</td>
+                                        <td className='Vtoroe'>{item.yonalish_uz}</td>
+                                        <td className='Tretie'>{item.price}</td>
+                                    </tr>
+                                </table>
+                            ))
+                        }
                     </div>
                 </div>
             </div>
